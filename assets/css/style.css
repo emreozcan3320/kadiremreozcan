@@ -1,0 +1,218 @@
+/* My import */
+
+
+/*cizik cizik font-family: 'Monoton', cursive;*/
+
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+
+/*sola yatık ince font-family: 'Annie Use Your Telescope', cursive;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope&display=swap');
+html,
+body {
+    height: 100%;
+}
+
+.ribbon {
+    position: absolute;
+    right: 0;
+}
+
+.particles_container {
+    background: #1a222c;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    position: absolute;
+    z-index: -99;
+}
+
+
+/* Letter.js https://github.com/jschr/textillate */
+
+.main_container {
+    height: 100vh;
+    text-align: center;
+    /*border: 1px green solid;*/
+}
+
+.main_text {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-weight: bolder;
+    text-align: center;
+    color: #fff;
+    font-size: 80px;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 600px) {
+    .main_text {
+        font-size: 60px;
+    }
+}
+
+
+/* ANIMATED TEXT https://tympanus.net/codrops/2015/02/16/create-animated-text-fills/ */
+
+.animated_text_container {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-style: italic;
+    /*border: 1px red solid;*/
+    width: 30vw;
+}
+
+.animated_text_container_mobil {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.animated_text_container .text {
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linejoin: round;
+    stroke-dasharray: 70 330;
+    stroke-dashoffset: 0;
+    animation: stroke 6s infinite linear;
+    font-family: 'Monoton', cursive;
+}
+
+.animated_text_container_mobil .text {
+    fill: none;
+    stroke-width: .3;
+    stroke-linejoin: round;
+    stroke-dasharray: 70 330;
+    stroke-dashoffset: 0;
+    animation: stroke 6s infinite linear;
+    font-family: 'Monoton', cursive;
+}
+
+@media only screen and (min-width: 600px) {
+    .animated_text_container_mobil {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .animated_text_container_web {
+        display: none;
+    }
+}
+
+.animated_text_container .text:nth-child(5n+1) {
+    stroke: #F2385A;
+    animation-delay: -1.2s;
+}
+
+.animated_text_container .text:nth-child(5n+2) {
+    stroke: #F5A503;
+    animation-delay: -2.4s;
+}
+
+.animated_text_container .text:nth-child(5n+3) {
+    stroke: #E9F1DF;
+    animation-delay: -3.6s;
+}
+
+.animated_text_container .text:nth-child(5n+4) {
+    stroke: #56D9CD;
+    animation-delay: -4.8s;
+}
+
+.animated_text_container .text:nth-child(5n+5) {
+    stroke: #3AA1BF;
+    animation-delay: -6s;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: -400;
+    }
+}
+
+
+/*ICONS*/
+
+.icon_container {
+    width: 100%;
+}
+
+.icon_href {
+    margin-left: 1vw;
+}
+
+@media screen and (max-width: 600px) {
+    .icon_href {
+        margin-left: 5vw;
+    }
+}
+
+.icon {
+    border: 3px solid white;
+    border-radius: 50%;
+    color: white;
+    font-size: 60px;
+    padding: 10px 5px 10px 5px;
+    display: inline-block;
+    width: 60px !important;
+}
+
+.mail_icon {
+    transition: 0.4s;
+}
+
+.mail_icon:hover {
+    color: rgb(225, 88, 75);
+    background: white;
+}
+
+.github_icon {
+    transition: 0.4s;
+}
+
+.github_icon:hover {
+    color: rgb(75, 88, 211);
+    background: white;
+}
+
+.linkedin_icon {
+    transition: 0.4s;
+}
+
+.linkedin_icon:hover {
+    color: rgb(0, 119, 181);
+    background: white;
+}
+
+
+/* Email Container */
+
+.email_container {
+    border: 1px solid red;
+    width: 50vw;
+}
+
+
+/*mail popup style*/
+
+.mail_text_style {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.send_mail_style {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 30px !important;
+    padding: 5px 15px 5px 15px !important;
+}
+
+.send_mail_style:hover {
+    font-size: 35px !important;
+    padding: 2px 12px 2px 12px !important;
+    font-weight: bold;
+}
