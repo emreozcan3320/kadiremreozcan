@@ -60,7 +60,7 @@ $(window).on('load', function() {
             html: '<form onsubmit="onSumbitHandler()" target="_blank" method="POST" action="https://formspree.io/emreozcan3320@gmail.com">' +
                 '<input type="email" name="email" placeholder="Your email" class="swal2-input" id="email" required>' +
                 '<textarea  maxlength="300" minlength="30" type="text" name="message"  id="message" required aria-label="Type your message here" class="swal2-textarea" placeholder="Type your message here... (max-lenght : 300)" style="display: flex;"></textarea>' +
-                '<button class="swal2-confirm swal2-styled send_mail_style" aria-label="" style="display: inline-block; background-color: rgb(48, 133, 214); border-left-color: rgb(48, 133, 214); border-right-color: rgb(48, 133, 214);"type="submit">Send Test</button>' +
+                '<button class="swal2-confirm swal2-styled send_mail_style" aria-label="" style="display: inline-block; background-color: rgb(48, 133, 214); border-left-color: rgb(48, 133, 214); border-right-color: rgb(48, 133, 214);"type="submit">Send</button>' +
                 '</form>',
             focusConfirm: false,
         })
