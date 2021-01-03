@@ -188,6 +188,15 @@ body {
     background: white;
 }
 
+.medium_icon {
+    transition: 0.4s;
+}
+
+.medium_icon:hover {
+    color: rgb(31,137,23);
+    background: white;
+}
+
 
 /* Email Container */
 
